@@ -1,6 +1,7 @@
 module Doorkeeper
   class ApplicationMetalController < ActionController::Metal
     MODULES = [
+      ActionController::RackDelegation,
       ActionController::Instrumentation,
       AbstractController::Rendering,
       ActionController::Rendering,
